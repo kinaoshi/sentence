@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;  
+  background: rgb(245, 211, 147);
+}
+.container {
+  width: 350px; 
+  margin: 0 auto;  
+}
+section {
+  margin: 0;
+}
+h1 {
+  display: none;
+}
+h2 {
+  width: 350px;
+  height: 60px;
+  font-size: 30px;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+  line-height: 60px;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+}
+/* .container {
+  margin: 0 auto;  
+} */
+.pic {
+  width: 350px;
+}
+.info div {
+  margin: 0;
+  width: 350px;
+}
+p{
+  margin: 0;
+  text-align: left;
+}
+.info div:first-child {
+  font-size: 18px;
+  color: rgb(2, 2, 92);
+  font-weight: bold;
+  background: rgb(248, 196, 241);
+  padding: 5px;
+  border: 1px solid rgb(0, 174, 255);
+  border-radius: 6px;
+}
+.info div:nth-child(2) {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(2, 2, 92);
+  background: rgb(248, 196, 241);
+  padding: 5px;
+  border: 1px solid rgb(0, 174, 255);
+  border-radius: 6px;
+}
+.info div:nth-child(3) {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(2, 2, 92);
+  background: rgb(248, 196, 241);
+  padding: 5px;
+  border: 1px solid rgb(0, 174, 255);
+  border-radius: 6px;
+}
+.info div:nth-child(4) {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(2, 2, 92);
+  background: rgb(248, 196, 241);
+  padding: 5px;
+  border: 1px solid rgb(0, 174, 255);
+  border-radius: 6px;
+}
+img {
+  width: 350px;
+  margin: 0 auto;
+}
+footer {
+  width: 200px;
+  height: 30px;
+  background: skyblue;
+  border: 1px solid rgb(5, 113, 156);
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px auto;
+}
+footer:hover {
+  opacity: 0.8;
+}
+.info span {
+  color: red;
+}
+ 
+@media (min-width: 750px) {
+  .container {
+    width: 750px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;  
+  }
+  .contain {
+    width: 350px;
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    width: 350px;
+    margin: 10px auto;
+    font-size: 42px;
+    color: rgb(255, 31, 50);
+    text-align: center;
+  }
+  h2 {
+    width: 750px;
+    margin: 0 auto;
+  }
+  
+}
