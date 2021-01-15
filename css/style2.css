@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  color: #333;  
+  color: #333;
   background: rgb(245, 211, 147);
 }
 .container {
-  width: 350px; 
-  margin: 0 auto;  
+  width: 350px;
+  margin: 0 auto;
 }
 section {
   margin: 0;
@@ -30,9 +30,7 @@ div {
 header {
   text-align: center;
 }
-/* .container {
-  margin: 0 auto;  
-} */
+
 .pic {
   width: 350px;
 }
@@ -40,7 +38,7 @@ header {
   margin: 0;
   width: 350px;
 }
-p{
+p {
   margin: 0;
   text-align: left;
 }
@@ -102,13 +100,13 @@ footer:hover {
 .info span {
   color: red;
 }
- 
+
 @media (min-width: 750px) {
   .container {
     width: 750px;
     display: flex;
     margin: 0px auto;
-    justify-content: space-around;  
+    justify-content: space-around;
   }
   .contain {
     width: 350px;
@@ -126,5 +124,4 @@ footer:hover {
     width: 750px;
     margin: 0 auto;
   }
-  
 }

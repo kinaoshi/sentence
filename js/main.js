@@ -39,24 +39,28 @@
 
     ansnum1.textContent = "";
     ansnum2.textContent = "";
-   
   }
 
   start.addEventListener("click", () => {
     started();
     correct.classList.add("hidden");
     mistake.classList.add("hidden");
-    if (start.textContent === "スタート" || coun.textContent === "1" || "2" || "3" || "4" || "5") {
-      start.textContent = "つぎのもんだい";      
+    if (
+      start.textContent === "スタート" ||
+      coun.textContent === "1" ||
+      "2" ||
+      "3" ||
+      "4" ||
+      "5"
+    ) {
+      start.textContent = "つぎのもんだい";
       coun.textContent = "1";
       qes.style.display = "block";
       qes2.style.display = "none";
       qes3.style.display = "none";
       qes4.style.display = "none";
       qes5.style.display = "none";
-
-      
-   }    
+    }
   });
 
   const next = document.querySelector(".next");
@@ -140,10 +144,10 @@
     }
   });
 
-  const qes2 = document.querySelector('.qes2');
-  const qes3 = document.querySelector('.qes3');
-  const qes4 = document.querySelector('.qes4');
-  const qes5 = document.querySelector('.qes5');
+  const qes2 = document.querySelector(".qes2");
+  const qes3 = document.querySelector(".qes3");
+  const qes4 = document.querySelector(".qes4");
+  const qes5 = document.querySelector(".qes5");
 
   next.addEventListener("click", () => {
     ansnum1.textContent = "";
@@ -154,55 +158,54 @@
 
     if (coun.textContent === "1") {
       coun.textContent = "2";
-      qes.style.display = "none";  
-      qes2.style.display = "block";  
-
-    
-    
+      qes.style.display = "none";
+      qes2.style.display = "block";
+      prev.classList.remove("eras");
+      // if (eras.classList.contains('inactive')) {
+      //   prev.classList.remove('inactive');
+      // }
     } else if (coun.textContent === "2") {
       coun.textContent = "3";
       qes2.style.display = "none";
       qes3.style.display = "block";
-      
     } else if (coun.textContent === "3") {
       coun.textContent = "4";
       qes3.style.display = "none";
       qes4.style.display = "block";
-      
     } else if (coun.textContent === "4") {
       coun.textContent = "5";
       qes4.style.display = "none";
       qes5.style.display = "block";
-     
+      next.classList.add("eras");
     }
-
-
-   
   });
 
-  const prev = document.querySelector('.prev');
-  prev.addEventListener('click', () => {
- 
+  const prev = document.querySelector(".prev");
+  prev.addEventListener("click", () => {
+    ansnum1.textContent = "";
+    ansnum2.textContent = "";
+
+    correct.classList.add("hidden");
+    mistake.classList.add("hidden");
+
     if (coun.textContent === "5") {
       coun.textContent = "4";
       qes5.style.display = "none";
       qes4.style.display = "block";
-     
+      next.classList.remove("eras");
     } else if (coun.textContent === "4") {
       coun.textContent = "3";
       qes4.style.display = "none";
       qes3.style.display = "block";
-          
     } else if (coun.textContent === "3") {
       coun.textContent = "2";
       qes3.style.display = "none";
       qes2.style.display = "block";
-      
     } else if (coun.textContent === "2") {
       coun.textContent = "1";
       qes2.style.display = "none";
       qes.style.display = "block";
-
+      prev.classList.add("eras");
     }
   });
 

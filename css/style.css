@@ -56,11 +56,11 @@ body {
   font-weight: bold;
   border-radius: 8px;
   text-align: center;
-  line-height: 40px; 
+  line-height: 40px;
   cursor: pointer;
 }
 .first:hover {
- opacity: 0.8;
+  opacity: 0.8;
 }
 .first a {
   text-decoration: none;
@@ -181,12 +181,10 @@ body {
   border-radius: 8px;
   user-select: none;
 }
-#sentence span:first-child
-{
+#sentence span:first-child {
   color: red;
 }
-#sentence span:nth-child(3)
-{
+#sentence span:nth-child(3) {
   color: blue;
 }
 span:nth-of-type(5) {
@@ -268,6 +266,14 @@ span:nth-of-type(7) {
   margin-top: 4px;
   box-shadow: none;
 }
+.eras {
+  opacity: 0.3;
+  margin-top: 4px;
+  box-shadow: none;
+}
+
+.inactive {
+}
 
 .section {
   margin-top: 20px;
@@ -290,10 +296,8 @@ span:nth-of-type(7) {
   border-color: rgb(4, 93, 16);
   border-radius: 8px;
   user-select: none;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
 }
-
-
 
 .qes.hidden {
   display: none;
@@ -320,10 +324,9 @@ span:nth-of-type(7) {
   line-height: 40px;
 }
 .qes4 span:nth-child(2) {
-  color: rgb(172, 63, 0); 
+  color: rgb(172, 63, 0);
 }
 .qes5 span {
-  /* display: inline-block; */
   width: 40px;
   height: 40px;
   color: rgb(214, 6, 6);
