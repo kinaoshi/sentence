@@ -3,11 +3,21 @@ body {
   padding-top: 20px;
   background: rgb(238, 232, 232);
 }
-@media screen and (min-width: 1240px) {
+
+@media screen and (min-width:1200px) and (max-width: 1350px) {
   body {
     display: flex;
     justify-content: space-around;
-  }
+  }  
+}
+@media screen and (min-width:1350px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+  }  
 }
 .head {
   margin: 0 auto 20px;
