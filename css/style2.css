@@ -125,3 +125,22 @@ footer:hover {
     margin: 0 auto;
   }
 }
+footer {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  background: rgb(105, 139, 250);
+  border: 1px solid rgb(2, 60, 153);
+  border-radius: 6px;  
+  cursor: pointer;
+  margin: 5px auto;
+}
+footer a {
+  color: crimson;
+  text-decoration: none;
+}
+footer:hover {
+  opacity: 0.8;
+}
