@@ -140,6 +140,7 @@ footer {
 footer a {
   color: crimson;
   text-decoration: none;
+  display: block;
 }
 footer:hover {
   opacity: 0.8;
