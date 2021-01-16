@@ -81,7 +81,7 @@
           numcou1 + numcou2 ===
           parseInt(ansnum1.textContent * 10) + parseInt(ansnum2.textContent)
         ) {
-          console.log(numcou1 + numcou2);
+          // console.log(numcou1 + numcou2);
           correct.classList.remove("hidden");
           mistake.classList.add("hidden");
         } else {
@@ -161,9 +161,7 @@
       qes.style.display = "none";
       qes2.style.display = "block";
       prev.classList.remove("eras");
-      // if (eras.classList.contains('inactive')) {
-      //   prev.classList.remove('inactive');
-      // }
+      
     } else if (coun.textContent === "2") {
       coun.textContent = "3";
       qes2.style.display = "none";

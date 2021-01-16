@@ -272,9 +272,6 @@ span:nth-of-type(7) {
   box-shadow: none;
 }
 
-.inactive {
-}
-
 .section {
   margin-top: 20px;
 }
@@ -315,7 +312,7 @@ span:nth-of-type(7) {
   display: none;
 }
 .qes4 span {
-  /* display: inline-block; */
+
   width: 40px;
   height: 40px;
   color: rgb(214, 6, 6);
@@ -516,4 +513,30 @@ span:nth-of-type(7) {
 .clear3:active {
   margin-top: 4px;
   box-shadow: none;
+}
+.step {
+  margin: auto 0px auto;  
+  width: 150px;
+  height: 70px;
+  padding: 0px;
+ text-align: center;
+ line-height: 70px;
+ background: rgb(152, 243, 100);
+ border-radius: 6px;
+ cursor: pointer; 
+}
+
+.step:hover {
+  opacity: 0.7;
+}
+
+.step a {
+  color: rgb(2, 25, 126);
+  font-size: 20px;
+  display: block;
+}
+.raps2 {
+  /* display: flex; */
+  margin: 16px auto;
+  width: 600px;
 }
