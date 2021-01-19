@@ -45,6 +45,12 @@
     started();
     correct.classList.add("hidden");
     mistake.classList.add("hidden");
+    qes2.style.display = "none";
+    qes.style.display = "block";
+    prev.classList.add("eras");
+    next.classList.remove("eras");
+
+    
     if (
       start.textContent === "スタート" ||
       coun.textContent === "1" ||
