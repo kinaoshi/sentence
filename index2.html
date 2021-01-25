@@ -22,39 +22,42 @@
     />
 
     <meta name="viewport" content="width=640px, initial-scalea=1" />
-    <title>算数文章問題</title>
+    <title>2算数文章問題</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
   </head>
 
   <body>
     <div>
       <div id="contain1">
-       
+        
         <div id="container">
           <div class="container1">
-            <div class="title">さんすう の ぶんしょうもんだい</div>
-            <div class="level">レベル１</div>
+            <div class="title">算数文章問題</div>
+            <div class="level">レベル２</div>
           </div>
           <div class="container2">
-            <div class="toi">
-              もんだいをよんで｢<span>しつもん</span>｣にこたえてね
+            <div class="toi">問題を読んで｢<span>質問</span>｣に答えてね
             </div>
             <div class="start">スタート</div>
           </div>
 
           <div id="sentence" contenteditable="true">
+
             <p class="page1">
-              スタートボタンをおすと ここに「もんだい」がでてくるよ。あとででてくる「しつもん」にこたえてね。
-              「しつもん」は５つあるよ。
+              スタートボタンを押すと ここに問題が出てくるので、後で出てくる質問に答えてね。<br>
+              質問は全部で５つあるよ。
             </p>
             <p class="page2 hidden">
-              　おばあちゃんから<span>赤い</span> あめ玉を
-              <span class="num1">4</span>こと、<span>青い</span> あめ玉を
-              <span class="num2">3</span>こもらいました。<br />
-              　おじいちゃんからは、<span>赤い</span>あめ玉を
-              <span class="num3">2</span>こと、<span>青い</span> あめ玉を
-              <span class="num4">1</span>こもらいました。
+              駐車場に <br />
+              <span class="car"><span class="purple"><img src="img/bus.png" alt=""></span> バス</span> が<span class="num1 bus">0</span>
+              台、 <span class="car"><span class="green"><img src="img/tra.png" alt=""> </span> トラック</span> が
+              <span class="num2 tra">0</span>台、<br />
+              <span class="car">🚓パトカー</span> が
+              <span class="num3 pc">0</span>台、
+              <span class="car">🚒消防車</span> が
+              <span class="num4 fir">0</span>台、<br />
+              とまっています。
             </p>
           </div>
         </div>
@@ -63,37 +66,36 @@
     <div>
       <div id="contain2">
         <div id="nextpanel">
-          <p class="cou">しつもん <span class="coun">1</span></p>
+          <p class="cou">質問 <span class="coun">1</span></p>
           <div class="prev1 eras">1</div>
           <div class="prev2 eras">2</div>
           <div class="prev3 eras">3</div>
           <div class="prev4 eras">4</div>
           <div class="prev5 eras">5</div>
-          <div class="next eras" >
-            つぎの　<br />
-            しつもん
-          </div>
-        </div>
 
+          <div class="next eras">次の質問</div>
+        </div>
         <div class="section">
-          <p class="qes hidden">おばあちゃんからあめ玉を、いくつもらいましたか。</p>
+          <p class="qes hidden">駐車場には全部で 何台 の車がとまっていますか。</p>
           <p class="qes2 hidden">
-            おじいちゃんからいくつ、あめ玉をもらいましたか。
+            バスが <span class="qes2bus"></span> 台、トラックが
+            <span class="qes2tra"></span> 台、出ていきました。
+            今、何台の車がとまっていますか。
           </p>
-          <p class="qes3 hidden">あわせていくつのあめ玉をもらいましたか。</p>
+          <p class="qes3 hidden">
+            パトカーが <span class="qes3pc"></span> 台、消防車が
+            <span class="qes3fiar"></span>
+            台、出ていきました。今、何台の車がとまっていますか。
+          </p>
           <p class="qes4 hidden">
-            <span>赤い</span>あめ玉を
-            <span>2</span>
-            こたべました。<span>赤い</span>あめ玉はいくつのこっていますか。
+            今、バスとパトカーは合わせて何台とまっていますか。
           </p>
           <p class="qes5 hidden">
-            そのあとで、<span>青い</span> あめ玉を
-            <span>1</span> こたべました。あめ玉は
-            ぜんぶでいくつのこっていますか。
+            今、トラックと消防車は合わせて何台とまっていますか。
           </p>
           <div id="contain">
             <p class="ans">
-              こたえ <span id="ansnum1"></span><span id="ansnum2"></span> こ
+              こたえ <span id="ansnum1"></span><span id="ansnum2"></span> 台
             </p>
             <div class="correct hidden">せいかい</div>
             <div class="mistake hidden">ちがうよ</div>
@@ -121,8 +123,8 @@
         </div>
       </div>
       <div class="raps2">
-        <div class="level1">
-          <a href="index2.html">レベル２へ</a>
+        <div class="level1"> 
+          <a href="index.html">レベル１へ</a>
         </div>
         <div class="step">
           <a href="https://kinaoshi.github.io/math/index.html">計算問題へ</a>
@@ -130,7 +132,6 @@
       </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
   </body>
 </html>
-

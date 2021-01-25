@@ -19,63 +19,7 @@ body {
     justify-content: space-between;
   }  
 }
-.head {
-  margin: 0 auto 20px;
-  padding: 0;
-  width: 600px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  color: azure;
-  background: darkblue;
-  border: 3px solid rgb(54, 131, 9);
-  border-radius: 8px;
 
-  display: flex;
-  justify-content: space-around;
-}
-
-.head p:first-child {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 40px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  line-height: 40px;
-}
-.head p:nth-child(2) {
-  margin: 0;
-  padding: 0;
-  width: 50px;
-  color: rgb(157, 255, 0);
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-}
-.first {
-  width: 120px;
-  height: 40px;
-  margin-right: 10px;
-  color: #fff;
-  font-size: 20px;
-  background: rgb(106, 184, 223);
-  border: 2px solid rgb(157, 255, 0);
-  font-weight: bold;
-  border-radius: 8px;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
-}
-.first:hover {
-  opacity: 0.8;
-}
-.first a {
-  text-decoration: none;
-  user-select: none;
-}
 
 #contain1 {
   width: 600px;
@@ -103,13 +47,13 @@ body {
   color: blue;
   align-items: center;
 }
-.level2 {
+.level {
   width: 100px;
   height: 40px;
   margin-right: 5px;
-  color: antiquewhite;
+  color: rgb(167, 245, 42);
 
-  background: #d1cfcf;
+  background: #ff2323;
 
   line-height: 40px;
   text-align: center;
@@ -119,13 +63,7 @@ body {
 
   user-select: none;
 }
-/* .level2:hover {
-  opacity: 0.7;
-}
-.level2:active {
-  margin-top: 4px;
-  box-shadow: none;
-} */
+
 
 .start {
   width: 150px;
@@ -191,6 +129,9 @@ body {
   border-radius: 8px;
   user-select: none;
 }
+#sentence .page2.hidden {
+  display: none;
+}
 #sentence span:first-child {
   color: red;
 }
@@ -222,10 +163,11 @@ span:nth-of-type(7) {
   width: 600px;
   height: 60px;
   display: flex;
+  align-items: center;
 }
 
 .cou {
-  width: 180px;
+  width: 150px;
 
   margin: 0;
   padding: 10px 0 10px;
@@ -248,9 +190,51 @@ span:nth-of-type(7) {
   text-align: center;
   line-height: 40px;
 }
-.prev,
+.prev1,
+.prev2,
+.prev3,
+.prev4,
+.prev5 {
+ margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  background: black;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgb(52, 52, 53);
+  user-select: none;;
+}
+.prev1:hover, 
+.prev2:hover, 
+.prev3:hover, 
+.prev4:hover, 
+.prev5:hover {
+  opacity: 0.8; 
+ } 
+.prev1:active, 
+.prev2:active, 
+.prev3:active, 
+.prev4:active, 
+.prev5:active {
+  box-shadow: 0 0 0 rgb(52, 52, 53); 
+  margin-top: 4px;
+ } 
+
+.qes2bus,
+.qes2tra,
+.qes3pc,
+.qes3fiar {
+  color: rgb(255, 2, 150);
+}
+
+
 .next {
-  width: 150px;
+  width: 130px;
   height: 38px;
   padding: 5px;
   line-height: 20px;
@@ -267,11 +251,11 @@ span:nth-of-type(7) {
   cursor: pointer;
   user-select: none;
 }
-.prev:hover,
+
 .next:hover {
   background: rgb(61, 80, 246);
 }
-.prev:active,
+
 .next:active {
   margin-top: 4px;
   box-shadow: none;
@@ -322,29 +306,8 @@ span:nth-of-type(7) {
 .qes5.hidden {
   display: none;
 }
-.qes4 span {
 
-  width: 40px;
-  height: 40px;
-  color: rgb(214, 6, 6);
-  font-size: 28px;
-  text-align: center;
-  line-height: 40px;
-}
-.qes4 span:nth-child(2) {
-  color: rgb(172, 63, 0);
-}
-.qes5 span {
-  width: 40px;
-  height: 40px;
-  color: rgb(214, 6, 6);
-  font-size: 28px;
-  text-align: center;
-  line-height: 40px;
-}
-.qes5 span:first-child {
-  color: blue;
-}
+
 #contain {
   margin: 0;
   width: 600px;
@@ -525,8 +488,37 @@ span:nth-of-type(7) {
   margin-top: 4px;
   box-shadow: none;
 }
-.step {
+.raps2 {
+  display: flex;
+  margin: 16px auto;
+  width: 600px;
+}
+
+.level1 {
   margin: auto 0px auto;  
+  width: 150px;
+  height: 70px;
+  padding: 0px;
+ text-align: center;
+ line-height: 70px;
+ background: rgb(152, 243, 100);
+ border-radius: 6px;
+ cursor: pointer; 
+}
+.level1:hover {
+  opacity: 0.7;
+}
+
+.level1 a {
+  color: rgb(2, 25, 126);
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  user-select: none;
+  font-weight: bold;
+}
+.step {
+  margin-left: 10px;  
   width: 150px;
   height: 70px;
   padding: 0px;
@@ -545,9 +537,18 @@ span:nth-of-type(7) {
   color: rgb(2, 25, 126);
   font-size: 20px;
   display: block;
+  text-decoration: none;
+  user-select: none;
+  font-weight: bold;
 }
-.raps2 {
-  /* display: flex; */
-  margin: 16px auto;
-  width: 600px;
+
+#sentence .car {
+  color: blue;
+}
+#sentence .num1.bus,
+#sentence .num2.tra,
+#sentence .num3.pc,
+#sentence .num4.fir
+ {
+  color: red;
 }
