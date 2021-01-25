@@ -133,10 +133,10 @@ img {
   margin-top: 20px;
   padding: 10px 10px;
   width: 580px;
-  line-height: 46px;
+  line-height: 1.7em;
   color: rgb(4, 4, 61);
-  font-size: 24px;
-  letter-spacing: 3px;
+  font-size: 22px;
+  letter-spacing: 2px;
   font-weight: bold;
   background: rgb(201, 231, 243);
   border: 2px solid;
@@ -301,7 +301,7 @@ span:nth-of-type(7) {
   padding: 10px 10px;
   color: rgb(57, 10, 100);
   background: rgb(172, 240, 214);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   border: 2px solid;
   border-color: rgb(4, 93, 16);
@@ -419,23 +419,24 @@ span:nth-of-type(7) {
 }
 #board {
   width: 600px;
-  height: 200px;
+  height: 170px;
   margin: 0;
 }
 
 .row1,
 .row2 {
+  margin-top: 10px;
   padding: 0;
   width: 600px;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 .row1 li,
 .row2 li {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background: hsl(200, 80%, 43%);
   font-size: 30px;
   color: rgb(243, 236, 236);
@@ -464,12 +465,12 @@ span:nth-of-type(7) {
 }
 .clear2 {
   width: 100px;
-  height: 80px;
+  height: 70px;
   font-size: 18px;
   color: rgb(203, 243, 224);
   font-weight: bold;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 4px 0 rgb(62, 6, 95);
@@ -486,12 +487,12 @@ span:nth-of-type(7) {
 }
 .clear3 {
   width: 100px;
-  height: 80px;
+  height: 70px;
   font-size: 20px;
   color: rgb(203, 243, 224);
   font-weight: bold;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 4px 0 rgb(8, 2, 44);
