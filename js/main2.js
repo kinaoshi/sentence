@@ -62,6 +62,7 @@
     prev4.classList.add("eras");
     prev5.classList.add("eras");
     next.classList.remove("eras");
+    check.classList.remove("eras");
     page1.style.display = "none";
     page2.classList.remove("hidden");
 
