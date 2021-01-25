@@ -461,7 +461,7 @@ span:nth-of-type(7) {
 
 .clear1 {
   width: 100px;
-  height: 80px;
+  height: 70px;
 }
 .clear2 {
   width: 100px;
@@ -515,10 +515,10 @@ span:nth-of-type(7) {
 .level1 {
   margin: auto 0px auto;  
   width: 150px;
-  height: 70px;
+  height: 50px;
   padding: 0px;
  text-align: center;
- line-height: 70px;
+ line-height: 50px;
  background: rgb(152, 243, 100);
  border-radius: 6px;
  cursor: pointer; 
@@ -538,10 +538,10 @@ span:nth-of-type(7) {
 .step {
   margin-left: 10px;  
   width: 150px;
-  height: 70px;
+  height: 50px;
   padding: 0px;
  text-align: center;
- line-height: 70px;
+ line-height: 50px;
  background: rgb(152, 243, 100);
  border-radius: 6px;
  cursor: pointer; 
