@@ -31,7 +31,7 @@
     const numcou1 = Math.floor(Math.random() * (max1 - min1 + 1) + min1);
     num1.textContent = numcou1;
 
-    let min2 = 4;
+    let min2 = 3;
     let max2 = 9;
     const numcou2 = Math.floor(Math.random() * (max2 - min2 + 1) + min2);
     num2.textContent = numcou2;
@@ -108,24 +108,44 @@
       coun.textContent = "2";
 
       let min1 = 1;
-      let max1 = 6;
+      let max1 = 8;
       const qes2bus1 = Math.floor(Math.random() * (max1 - min1 + 1) + min1);
 
       let min2 = 1;
-      let max2 = 7;
+      let max2 = 8;
 
       const qes2tra1 = Math.floor(Math.random() * (max2 - min2 + 1) + min2);
 
-      if (numcou1 < qes2bus1) {
-        qes2bus.textContent = numcou1;
+      if (numcou1 === qes2bus1) {
+        
+
+        if (qes2bus1 === 1 || qes2bus1 === 2 || qes2bus1 === 3 || qes2bus1 === 4 || qes2bus1 === 5) {
+          qes2bus.textContent = qes2bus1 - 2;
+        } else if (qes2bus1 === 6 || qes2bus1 === 7 || qes2bus1 === 8  || qes2bus1 === 9) {
+          qes2bus.textContent = qes2bus1 - 3;
+        }
+      } else if (numcou1 < qes2bus1) {
+
+        qes2bus.textContent = parseInt(numcou1)  - 2;
       } else {
-        qes2bus.textContent = qes2bus1;
+        qes2bus.textContent = qes2bus1
       }
-      if (numcou2 < qes2tra1) {
-        qes2tra.textContent = numcou2;
+
+      if (numcou2 === qes2tra1) {
+       
+        if (qes2tra1 === 1 || qes2tra1 === 2 || qes2tra1 === 3 || qes2tra1 === 4 || qes2tra1 === 5) {
+          qes2tra.textContent = qes2tra1 - 2;
+        } else if (qes2tra1 === 6 || qes2tra1 === 7 || qes2tra1 === 8  || qes2tra1 === 9) {
+          qes2tra.textContent = qes2tra1 - 3;
+        }
+      } else if (numcou2 < qes2tra1) {
+        qes2tra.textContent = parseInt(numcou2)  - 2;
       } else {
-        qes2tra.textContent = qes2tra1;
+        qes2tra.textContent = qes2tra1
       }
+       
+
+     
 
       ansnum1.textContent = "";
       ansnum2.textContent = "";
@@ -154,16 +174,34 @@
       let max2 = 7;
       const qes3fiar1 = Math.floor(Math.random() * (max2 - min2 + 1) + min2);
 
-      if (numcou3 < qes3pc1) {
-        qes3pc.textContent = numcou3;
+      if (numcou3 === qes3pc1) {
+        
+
+        if (qes3pc1 === 1 || qes3pc1 === 2 || qes3pc1 === 3 || qes3pc1 === 4 || qes3pc1 === 5) {
+          qes3pc.textContent = qes3pc1 - 2;
+        } else if (qes3pc1 === 6 || qes3pc1 === 7 || qes3pc1 === 8  || qes3pc1 === 9) {
+          qes3pc.textContent = qes3pc1 - 3;
+        }
+      } else if (numcou3 < qes3pc1) {
+
+        qes3pc.textContent = parseInt(numcou3)  - 2;
       } else {
-        qes3pc.textContent = qes3pc1;
+        qes3pc.textContent = qes3pc1
       }
-      if (numcou4 < qes3fiar1) {
-        qes3fiar.textContent = numcou4;
+
+      if (numcou4 === qes3fiar1) {
+       
+        if (qes3fiar1 === 1 || qes3fiar1 === 2 || qes3fiar1 === 3 || qes3fiar1 === 4 || qes3fiar1 === 5) {
+          qes3fiar.textContent = qes3fiar1 - 2;
+        } else if (qes3fiar1 === 6 || qes3fiar1 === 7 || qes3fiar1 === 8  || qes3fiar1 === 9) {
+          qes3fiar.textContent = qes3fiar1 - 3;
+        }
+      } else if (numcou4 < qes3fiar1) {
+        qes3fiar.textContent = parseInt(numcou4)  - 2;
       } else {
-        qes3fiar.textContent = qes3fiar1;
+        qes3fiar.textContent = qes3fiar1
       }
+       
 
 
       ansnum1.textContent = "";
@@ -188,7 +226,6 @@
       ansnum2.textContent = "";
       correct.classList.add("hidden");
       mistake.classList.add("hidden");
-      
     }
   });
 
